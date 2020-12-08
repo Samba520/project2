@@ -6,14 +6,7 @@
     scroll-behavior: smooth;
 }
 
-.header{
-  width: 100%;
-  height: 100vh;
-  background: url(../images/bg.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
+
 
 
 header nav.navbar {
@@ -69,13 +62,13 @@ header .header-content .content {
 
 header .header-content .content h2 {
 
-  color: #FFF;
+  color: #000;
   font-weight: 100;
   font-size: 1rem;
   font-family:  'Open Sans', sans-serif;
 }
 header .header-content .content h3 {
-  color: #FFF;
+  color: #000;
   font-weight: 600;
   font-size: 4rem;
   font-family:  'Open Sans', sans-serif;
@@ -84,23 +77,141 @@ header .header-content .content h3 {
 
 header .header-content .content p {
   font-size: 1.3rem;
-  color: #FFF;
+  color: #000;
   font-weight: 500;
   font-family:  'Open Sans', sans-serif;
 
 }
-
+.about-text h1{
+    padding-top: 150px;
+}
 .btn2{
   border-radius: 10px;
   padding: 5px 10px;
-
 }
-.gallery{
+
+.life-history {
   width: 100%;
   height: auto;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 20px 0;
 }
-.gallery text{
-  padding-top:150px;
+
+.life-history::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: ;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.life-history h2 {
+  color: #000;
+  font-weight: 600;
+  font-weight: 2.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.life-history .life-single {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.432);
+  margin: 35px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.life-history .life-single p {
+  margin-bottom: 20px;
+}
+
+.life-history .life-single p span {
+  border: 3px solid rgba(0, 0, 0, 0.596);
+  padding: 5px 15px;
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.life-history .life-single h4 {
+  color: #000;
+  font-weight: 500;
+}
+
+.life-history .life-single p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000;
+}
+.testimonials{
+  padding: 40px 0;
+}
+
+.carousel-indicators {
+  color: #000;
+  
+}
+
+.testimonials .carousel-indicators li {
+  bottom: -65px;
+  background-color:#000;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+
+}
+
+.testimonials h2 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.testimonials .testimonials-single {
+  border: 1px solid rgba(0, 0, 0, .1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.testimonials .testimonials-single img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonials .testimonials-single h4 {
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.testimonials .testimonials-single p.occupation {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.testimonials .testimonials-single .text p {
+  font-size: .9rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+
+.gallery{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 75px;
+}
+.gallery-text h1{
+    padding-top: 150px;
 }
 .img:hover{
     transform: scale(1.05);
@@ -109,10 +220,42 @@ header .header-content .content p {
  .btn3{
    border-radius: 10px;
    position: relative;
-   left:50%;
-   
+   left: 37%;
  }
-
+ .gallery1 {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; }
+    .gallery1 .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .gallery1 .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+    
+    @media (max-width: 450px) {
+    .gallery1 {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    }
+    }
+    
+    @media (max-width: 400px) {
+    .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    }
+    }
+    
+ 
 .project-text{
     padding-top: 150px ;
     letter-spacing: 2px;
@@ -168,7 +311,7 @@ header .header-content .content p {
   }
   
   .work-content .w-like .num-like {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
   
   .w-title {
@@ -180,6 +323,7 @@ header .header-content .content p {
     left: 37%;
     top: 50%;
   }
+
   body{
     background:rgba(0, 0, 0, 0.24);
 }
@@ -233,5 +377,3 @@ header .header-content .content p {
     border: none;
     cursor: pointer;
 }
-  
-   
