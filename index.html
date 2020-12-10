@@ -19,6 +19,7 @@
     />
     <!----google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 <!-----fontawasome--->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -27,13 +28,14 @@
     <title>portfolio</title>
   </head>
   <body>
+  
     <!------nav bar-->
     <header>
       
       
     <section id="header" class="header">
       <nav class="navbar container-fluid navbar-expand-lg navbar-dark  fixed-top">
-        <a class="navbar-brand pl-5 pt-3 " href="#"><b>PORTFOLIO</b></a>
+        <a class="navbar-brand pl-5 pt-3 "  data-aos="fade-left" href="#"><b>PORTFOLIO</b></a>
         <button
           class="navbar-toggler text-center"
           type="button"
@@ -45,7 +47,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto pr-5">
+          <ul class="navbar-nav ml-auto pr-5"  data-aos="fade-right">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home </a>
             </li>
@@ -67,8 +69,8 @@
   
     <!------nav bar end-->
     <div class="home">
-      <section id="home" class="home">
-       <div class="container header-content w-md-50 w-100">
+      <section id="home" class="home" >
+       <div class="container header-content w-md-50 w-100  ">
         <img src="./images/5.jpg" alt="Mark Waugh" class="img-fluid">
         <div class="content">
             <h2>Hello, I'm </h2>
@@ -93,13 +95,13 @@
           <hr>
         </div>
 
-        <div class="about p-10">
+        <div class="about  p-10" >
         <div class="row  container-fluid ">
-          <div class=" col-lg-6 col-md-12 col-12">
+          <div class=" col-lg-6 col-md-12 col-12"  data-aos="fade-left">
             <img src="./images/bg.jpg.jpg" class="img1 img-fluid  w-100  h-75" height="80">
           </div>
       
-            <div class=" col-lg-6 col-md-12 col-12 pl-5">
+            <div class=" col-lg-6 col-md-12 col-12 pl-5"  data-aos="fade-right">
               <h2>MY SELF</h2>
               <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi quidem temporibus possimus architecto voluptate perspiciatis voluptatibus assumenda, rem reiciendis aliquid ducimus aspernatur consectetur optio sed illum earum rerum saepe!</P>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam pariatur soluta at ullam molestiae aspernatur doloribus minus accusantium. Enim soluta suscipit odio quaerat minima iusto beatae assumenda culpa omnis placeat.</p>
@@ -112,12 +114,12 @@
     <!------end about------->
     <!------gallery------->
        <section id="gallery">
-        <div class="gallery-text display-4 pt-3  pb-5 text-center">
+        <div class="gallery-text display-4 pt-3  pb-5 text-center" data-aos="zoom-in-down">
           <h1 ><b>GALLERY</b></h1>
           <hr>
         </div>
          <div class="gallery">
-           <div class="container">
+           <div class="container" data-aos="zoom-in-down">
              <div class="row">
                 <div  class="col-xs-12  col-md-6 col-lg-4">
                   <a href="./images/1.jpg">
@@ -177,9 +179,9 @@
         <hr>
       </div>
       <div class="projects">
-        <div class="p-container  container text-center">
+        <div class="p-container  container text-center" >
           <h5>My Latest  Works</h5>
-      <div class="row">
+      <div class="row" data-aos="fade-right">
         <div class="col-md-4">
           <div class="work-box">
             <a href="./images/5.jpg" data-lightbox="gallery-mf">
@@ -267,35 +269,56 @@
 
     <!------contact------->
     <section id="contact">
-      <div class="contact container">
+      <div class="contact container"  data-aos="fade-left">
         <div class="contact-text display-4   pb-5 pt-5 text-center">
           <h1 ><b>CONTACT</b></h1>
           <hr>
         </div>
-       <form method="post" action="">
-      <h3>Drop Me a Message</h3>
-     <div class="row pb-5">
-          <div class="col-md-6">
-              <div class="form-group">
-                  <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
-              </div>
-              <div class="form-group">
-                  <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-              </div>
-              <div class="form-group">
-                  <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
-              </div>
-              <div class="form-group">
-                  <input type="submit" name="btnSubmit" class="btnContact btn-dark" value="Send Message" />
+        <section id="contact container">
+          <div class="container">
+              <p class="text-center w-75 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum purus at sem ornare sodales. Morbi leo nulla, pharetra vel felis nec, ullamcorper condimentum quam.</p>
+              <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                  <div class="card border-0">
+                     <div class="card-body text-center">
+                       <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                       <h4 class="text-uppercase mb-5">call us</h4>
+                       <p>+8801683615582,+8801750603409</p>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                  <div class="card border-0">
+                     <div class="card-body text-center">
+                       <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+                       <h4 class="text-uppercase mb-5">office loaction</h4>
+                      <address>Suite 02, Level 12, Sahera Tropical Center </address>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                  <div class="card border-0">
+                     <div class="card-body text-center">
+                       <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+                       <h4 class="text-uppercase mb-5">office loaction</h4>
+                       <address>Suite 02, Level 12, Sahera Tropical Center </address>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+                  <div class="card border-0">
+                     <div class="card-body text-center">
+                       <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+                       <h4 class="text-uppercase mb-5">email</h4>
+                       <p>http://al.a.noman1416@gmail.com</p>
+                     </div>
+                   </div>
+                </div>
               </div>
           </div>
-          <div class="col-md-6">
-              <div class="form-group">
-                  <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-              </div>
-          </div>
-      </div>
-  </form>
+       </section>
+        
+      
       </div>
         
               </div>
@@ -458,6 +481,10 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
