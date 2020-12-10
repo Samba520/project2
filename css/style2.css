@@ -5,7 +5,9 @@
     font-family:  'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
-
+body {
+  overflow-x: hidden; /* Hide scrollbars */
+}
 
 
 
