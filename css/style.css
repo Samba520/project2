@@ -187,3 +187,9 @@ header .header-content .content p {
 #contact .card:hover i,#contact .card:hover h4{
 	color: rgb(87, 153, 197);
 }
+@media screen and (max-width:320px) {
+  body {
+      width: 320px;
+  }
+  /* some other style */  
+  }
