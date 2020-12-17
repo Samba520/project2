@@ -5,8 +5,8 @@
     font-family:  'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
-body {
-  width: 100%;
+html,body {
+  width: 100vw;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -45,11 +45,11 @@ header nav.navbar {
     text-transform: uppercase;
     font-size: 15px;
 }
-   
+
 header .header-content {
   position: absolute;
   z-index: 999;
-  height: 300px;
+  height: auto;
   left: 50%;
   top: 55%;
   transform: translate(-50%, -50%);
@@ -89,7 +89,7 @@ header .header-content .content h3 {
 
 
 header .header-content .content p {
-  font-size: 1.3rem;
+  font-size: clamp(16px 5vh 34px);
   color: #FFF;
   font-weight: 500;
   font-family:  'Open Sans', sans-serif;
@@ -102,7 +102,7 @@ header .header-content .content p {
 
 }
 .gallery{
-  width: 100%;
+  
   height: auto;
 }
 .gallery text{
@@ -190,4 +190,3 @@ header .header-content .content p {
 #contact .card:hover i,#contact .card:hover h4{
 	color: rgb(87, 153, 197);
 }
-
